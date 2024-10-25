@@ -6,6 +6,27 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        const ctx = document.getElementById('myChart');
+      
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: ['Group 1', 'Group 2', 'Grouo 3', 'Group 4'],
+            datasets: [{
+              label: '# of Groupings',
+              data: [30, 50, 20, 40,],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      </script>
 </body>
 </html>
